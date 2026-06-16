@@ -122,7 +122,7 @@ public class TestSession extends BroadcastReceiver {
 	public static boolean closeBrokenSession(Context context) {
 		try {
 			SessionState state = loadSessionState(context);
-			if (state.current_test != null) {
+			if (state != null && state.current_test != null) {
 				Log.i("XXX", "marking result out of memory");
 				// mark current_test as failed with Out of memory
 				ResultGroup failure = TestUtils.createSingleResultList(TestUtils.createFailedResult(state.current_test.testId(), state.current_test.testId(), "OUT_OF_MEMORY"));
