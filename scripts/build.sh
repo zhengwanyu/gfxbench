@@ -99,7 +99,7 @@ export MP_COMPILE
 
 # INTERNAL USE FOR KISHONTI: Full UI application or command line test runner
 # (gui / developer)
-: ${APPLICATION_TYPE:="developer"}
+: ${APPLICATION_TYPE:="gui"}
 export APPLICATION_TYPE
 if [ "$APPLICATION_TYPE" != "gui" ] && [ "$APPLICATION_TYPE" != "developer" ]; then
     echo "APPLICATION_TYPE must be set 'gui' or 'developer'"
