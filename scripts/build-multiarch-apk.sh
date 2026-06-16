@@ -9,10 +9,10 @@
 : ${BUILD_THIRDPARTY:="true"}
 
 if [ "$STORE_VERSION" = "true" ]; then
-    echo "STORE_VERSION: COMMUNITY_BUILD=true, CONFIG=Release, BUNDLE_DATA=false"
+    echo "STORE_VERSION: COMMUNITY_BUILD=true, CONFIG=Release, BUNDLE_DATA=true"
     export COMMUNITY_BUILD=true
     export CONFIG=Release
-    export BUNDLE_DATA=false
+    export BUNDLE_DATA=true
 fi
 
 export ARCHIVE_ROOT=${WORKSPACE}/archive
