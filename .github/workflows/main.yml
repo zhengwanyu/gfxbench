@@ -147,7 +147,7 @@ jobs:
           echo "NG_CMAKE_TOOLCHAIN_FILE=$HOME/android-sdk/ndk/28.0.12674087/build/cmake/android.toolchain.cmake" >> $GITHUB_ENV
           echo "CONFIG=Release" >> $GITHUB_ENV
           echo "WORKSPACE=${{ github.workspace }}" >> $GITHUB_ENV
-          echo "BUNDLE_DATA=false" >> $GITHUB_ENV
+          echo "BUNDLE_DATA=true" >> $GITHUB_ENV
           echo "MAKEFLAGS=-j$(nproc)" >> $GITHUB_ENV
           echo "ANDROID_SDK_ROOT=/tmp/android_sdk/" >> $GITHUB_ENV
           echo "PLATFORM=android" >> $GITHUB_ENV
